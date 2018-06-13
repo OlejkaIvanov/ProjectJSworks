@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pro Verstka Html Project I.O.M ShoppingCard</title>
+        <link rel="SHORTCUT ICON" href="img/header/Group2.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="packages/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="packages/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link rel="stylesheet" href="css/ShoppingCard.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    </head>
+    <body>    
+        <div class="header">
+            <div class="container">
+                <a href="#" class="logo"></a>
+                <a href="" class="brand">bran<span>d</span></a>
+                <a href="" class="korzina"></a>
+                <div class="form-group">
+                        <select class="form-control input-sm" id="sel3">
+                          <option>Browse</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
+                </div>
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control" placeholder="Search for Item...">
+                    <div class="input-group-btn">
+                      <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                  </div>
+                <button class="button MyAcc"></button>
+            </div>              
+        </div>         
+        <div class="nav">
+            <div class="topnav">
+                <a class="active" href="#home">Home</a>
+                <a href="#Man">Man</a>
+                <a href="#Women">Women</a>
+                <a href="#Kids">Kids</a>
+                <a href="#Accoseriese">Accoseriese</a>
+                <a href="#Hot Deals ">Hot Deals </a>
+            </div>
+        </div>
+        <div class="aside">
+            <p class="asidetextleft">New Arrivals</p>
+            <div class="checkoutnav">
+                <a href="#">home</a><span> /</span>
+                <a href="#">man</a><span> /</span>
+                <a href="#">NEW ARRIVALS</a>
+            </div>
+        </div>   
+        <div class="container content">
+            <main>
+                <div class="basket">
+                    <div class="basket-labels">
+                    <ul>
+                        <li class="item item-heading" style="text-transform: uppercase;font-weight: bold;margin-top: -10px;">Item</li>
+                        <li class="price">Price</li>
+                        <li class="quantity">Quantity</li>
+                        <li class="subtotal" style="margin-top: -72px;text-transform: uppercase;font-weight: bold;" "margin-left:=830px;">Subtotal</li>
+                    </ul>
+                    </div>
+                    <div class="basket-product">
+                    <div class="item">
+                        <div class="product-image">
+                            <img src="img/ShoppingCard/SCLayer1.png" alt="Placholder Image 2" class="product-frame">
+                        </div>
+                        <div class="product-details">
+                        <h1><strong><span class="item-quantity">4</span> x Mango  People  T-shirt</strong></h1>
+                        <p><strong>Size: Xll</strong></p>
+                        </div>
+                    </div>
+                    <div class="price one" style="margin-top: 59px;">104.00</div>
+                    <div class="quantity">
+                        <input type="number" value="4" min="1" class="quantity-field" style="margin-top: 49px;">
+                    </div>
+                    <div class="subtotal">416.00</div>
+                    <div class="remove">
+                        <button class="removebtn"><i class="fa fa-times-circle"></i></button>
+                    </div>
+                    </div>
+                    <div class="basket-product">
+                    <div class="item">
+                        <div class="product-image">
+                          <img src="img/ShoppingCard/SCLayer2.png" alt="Placholder Image 2" class="product-frame">
+                        </div>
+                        <div class="product-details">
+                        <h1><strong><span class="item-quantity">1</span> x Whistles</strong> Amella Lace Midi Dress</h1>
+                        <p><strong>Size: Xll</strong></p>
+                        </div>
+                    </div>
+                    <div class="price two" style="margin-top: 59px;">26.00</div>
+                    <div class="quantity">
+                        <input type="number" value="1" min="1" class="quantity-field" style="margin-top: 49px;">
+                    </div>
+                    <div class="subtotal">26.00</div>
+                    <div class="remove">
+                        <button class="removebtn"><i class="fa fa-times-circle"></i></button>
+                    </div>
+                    </div>
+                </div>
+                <aside>
+                    <div class="summary">
+                    <div class="summary-total-items" style="margin-top: 19px;"><span class="total-items"></span> Items in your Bag</div>
+                    <div class="summary-subtotal">
+                        <div class="subtotal-title">Subtotal</div>
+                        <div class="subtotal-value final-value" id="basket-subtotal">442.00</div>
+                        <div class="summary-promo hide">
+                        <div class="promo-title">Promotion</div>
+                        <div class="promo-value final-value" id="basket-promo"></div>
+                        </div>
+                    </div>
+                    <div class="summary-total">
+                        <div class="total-title">Total</div>
+                        <div class="total-value final-value" id="basket-total">442.00</div>
+                    </div>
+                    <div class="summary-checkout">
+                        <button class="checkout-cta">Go to Secure Checkout</button>
+                    </div>
+                    </div>
+                </aside>
+                <div class="adress">
+                    <form action="/action_page.php">
+                      <label class="country" for="country">Shipping Adress</label>
+                      <select id="country" name="country">
+                        <option value="australia">Bangladesh</option>
+                        <option value="canada">Russia</option>
+                        <option value="usa">USA</option>
+                      </select>
+                      <label for="fname"></label>
+                      <input class="adressinput" type="text" id="fname" name="firstname" placeholder="State">
+                      <label for="lname"></label>
+                      <input class="adressinput" type="text" id="lname" name="lastname" placeholder="Postcode / Zip">
+                      <button class="getaquote">get a quote</button>
+                      <label for="lname"></label>
+                      <p class="coupondiscount">coupon  discount</p>
+                      <p class="enteryourcoupon">Enter your coupon code if you have one</p>
+                      <input class="stateright" type="text" id="lname" name="lastname" placeholder="State">
+                      <button class="Applycoupon">Apply coupon</button>
+                    </form>
+                </div>
+             </main>   
+        </div>     
+    </div>         
+        <div class="footer">
+                <div class=subscribe></div>
+                    <div class="sub">
+                        <div class='row'>
+                            <div class='col-md-offset-2 col-md-8'>
+                            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                                <!-- Bottom Carousel Indicators -->
+                                <ol class="carousel-indicators">
+                                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#quote-carousel" data-slide-to="1"></li>
+                                <li data-target="#quote-carousel" data-slide-to="2"></li>
+                                </ol>
+                                
+                                <!-- Carousel Slides / Quotes -->
+                                <div class="carousel-inner">
+                                
+                                <!-- Quote 1 -->
+                                <div class="item active">
+                                    <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-3 text-center">
+                                        <img class="img-circle" src="http://www.reactiongifs.com/r/overbite.gif" style="width: 86px;height:86px;">
+                                        <!--<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" style="width: 100px;height:100px;">-->
+                                        </div>
+                                        <div class="col-sm-9">
+                                        <p class="subhead">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<br>
+                                                a pulvinar purus condimentum a. Aliquam condimentum<br> mattis neque sed pretium”</p>
+                                        <p class="small1">Bin Burhan</p>
+                                        <p class="small2">Dhaka, Bd </p>
+                                        </div>
+                                    </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 2 -->
+                                <div class="item">
+                                    <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-3 text-center">
+                                        <img class="img-circle" src="img/footer/layer40.png" style="width: 86px;height:86px;">
+                                        </div>
+                                        <div class="col-sm-9">
+                                        <p class="subhead">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<br>
+                                                a pulvinar purus condimentum a. Aliquam condimentum<br> mattis neque sed pretium”</p>
+                                        <p class="small1">Bin Burhan</p>
+                                        <p class="small2">Dhaka, Bd </p>
+                                        </div>
+                                    </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 3 -->
+                                <div class="item">
+                                    <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-3 text-center">
+                                        <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/keizgoesboom/128.jpg" style="width: 86px;height:86px;">
+                                        </div>
+                                        <div class="col-sm-9">
+                                        <p class="subhead">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<br>
+                                                a pulvinar purus condimentum a. Aliquam condimentum<br> mattis neque sed pretium”</p>
+                                        <p class="small1">Bin Burhan</p>
+                                        <p class="small2">Dhaka, Bd </p>
+                                        </div>
+                                    </div>
+                                    </blockquote>
+                                </div>
+                                </div>
+                            </div>                          
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="sub2">
+                        <form action="#" method="post" name="sign up for beta form">
+                            <div class="subbott">
+                                <p>Subscribe</p>
+                            </div> 
+                            <div class="description">
+                                <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                            </div>
+                            <div class="input">
+                                <input type="text" class="button" id="email" name="email" placeholder="Enter Your Email">
+                                <input type="submit" class="button" id="submit" value="Subscribe">
+                            </div>
+                        </form>
+                    </div>  
+                    <div class="container footerInside">
+                        <div class="footerColumn about">
+                            <div class="columnHead">
+                                <a href="#" class="logo2"></a>
+                                <a href="" class="brand2"></a>   
+                            </div>
+                            <div class="columnAboutUs">
+                                <div class="aboutText">
+                                    <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go&nbsp;forward benefits. Intrinsicly syndicate an&nbsp;expanded array of&nbsp;processes and <nobr>cross-unit</nobr> partnerships.</p>
+                                    <p>Efficiently plagiarize 24/365 action items and focused infomediaries.<br />
+                                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+                                </div>
+                            </div>    
+                        </div>        
+                        <div class="footerColumn">
+                            <div class="columnHead">
+                                COMPANY
+                            </div>
+                            <div class="columnLinks">
+                                <a href="#">Home</a> 
+                                <a href="#">Shop</a>
+                                <a href="#">About</a>
+                                <a href="#">How It Works</a>
+                                <a href="#">new collections</a>
+                                <a href="#">Contact</a>
+                            </div>
+                        </div>    
+                        <div class="footerColumn">
+                            <div class="columnHead">
+                                INFORMATION
+                            </div>
+                            <div class="columnLinks">
+                                <a href="#">Tearms &amp; Condition</a>
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">How to Buy</a>
+                                <a href="#">How to Sell</a>
+                                <a href="#">Promotion</a>
+                            </div>
+                        </div>
+                        <div class="footerColumn">
+                            <div class="columnHead">
+                                SHOP CATEGORY
+                            </div>
+                            <div class="columnLinks">
+                                <a href="#">Men</a>
+                                <a href="#">Women</a>
+                                <a href="#">Child</a>
+                                <a href="#">Apparel</a>
+                                <a href="#">Brows All</a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>            
+            </div>
+            <div class="footerCopyrights">
+                <div class="container copyrightsInside">
+                    <div class="footerCopySign">
+                        &copy; 2017  Brand  All Rights Reserved.
+                    </div>
+                </div>  
+                <div class="footerSocials">  
+                    <ul class="faul">
+                        <li class="fali">
+                            <a class="afa" href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>   
+                        </li>
+                        <li class="fali">
+                            <a class="afa" href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>   
+                        </li>
+                        <li class="fali">
+                            <a class="afa" href="#">
+                                <i class="fa fa-instagram"></i>
+                            </a>   
+                        </li>
+                        <li class="fali">
+                            <a class="afa" href="#">
+                                <i class="fa fa-pinterest-p"></i>
+                            </a>   
+                        </li>
+                        <li class="fali">
+                            <a class="afa" href="#">
+                                <i class="fa fa-google-plus"></i>
+                            </a>   
+                        </li>
+                    </ul>    
+                </div>        
+            </div>
+        </div>    
+    
+        <script src="packages/jquery/jquery-1.12.4.min.js"></script>
+        <script src="packages/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script src="js/ShoppingCard.js"></script>
+    </body>
+</html>
